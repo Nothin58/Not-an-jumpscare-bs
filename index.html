@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resgate Seu Presente</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+        #link {
+            color: transparent;
+            text-decoration: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Som aterrorizante em loop -->
+    <audio autoplay loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Imagem do Jeff the Killer -->
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/Jeff_the_Killer.jpg/220px-Jeff_the_Killer.jpg" alt="Jeff the Killer">
+
+    <!-- Link disfarçado -->
+    <a id="link" href="https://link.brawlstars.com/en/?action=voucher&code=ab9cf7c2-45f8-4012-ad38-dfe8b1747c3b" target="_blank">Resgatar no Brawl Stars</a>
+
+    <!-- Script para redirecionar automaticamente -->
+    <script>
+        // Redireciona automaticamente após 5 segundos para o link disfarçado
+        setTimeout(function() {
+            window.location.href = "https://link.brawlstars.com/en/?action=voucher&code=ab9cf7c2-45f8-4012-ad38-dfe8b1747c3b";
+        }, 5000);
+    </script>
+</body>
+      </html>
